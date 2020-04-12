@@ -1,0 +1,220 @@
+/* ----------------------------------------------- */
+/* Configurações Básicas */
+/* ----------------------------------------------- */
+
+/*Zerando bordas para ter maior domínio sobre os box*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff; /*Define a cor do fundo*/
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif; /*a terceira opção é qualquer fonte daquela família, note que o nome da família não esta entre aspas.*/
+    font-weight: 300; /*de acordo com a fonte que importamos*/
+    font-size: 20px;
+    text-rendering: optimizeLegibility; /*otimiza a renderização da fonte para leitura, tendo uma melhor qualidade*/
+}
+
+header {
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.1),
+                        rgba(0, 0, 0, 0.7)),
+                        url(img/tr0.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2.normal-case {
+    text-transform: none;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center; /*Centralizando o texto*/
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #82c91e;
+    content: " "; /*Conteúdo do item*/
+    width: 100px; /*Comprimento do item*/
+    margin: 0 auto; /*Centralizar*/
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 900px; /*conforme o monitor*/
+    top: 75%;
+    left: 5%;
+    transform: translate(-5%, -75%);
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 2px;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s; /*a transição da cor do fundo, da borda e da fonte deve demorar 0.2 segundos*/
+}
+
+.btn-full:link,
+.btn-full:visited  {
+    background-color: #82c91e;
+    border: 1px solid #82c91e;
+    color: #fff;
+    margin-right: 15px; /*espaçamento entre os btões*/
+}
+
+.btn-ghost:link,
+.btn-ghost:visited  {
+    border: 1px solid #82c91e;
+    color: #82c91e;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #6fab1a;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #6fab1a;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #6fab1a;
+    color: #fff;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px; /*colocar um espaçamento acima da logo para baixar ela*/
+}
+
+.main-nav {
+    float: right;
+    list-style: none; /*Se livra dos bullets - bolinhas pretas - marcadores*/
+    margin-top: 50px; /*colocar um espaçamento acima da lista para baixar ela*/
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px; /*espaçamento entre os items da lista*/
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #82c91e;
+}
+
+ion-icon {
+    font-size: 250%; /*Tamanho do ícone*/
+    display: block;
+    color: #82c91e; /*cor da fonte = cor do ícone*/
+    margin-bottom: 10px; /*espaço entre o ícone e o título do feature*/
+}
+
+section {
+    padding: 80px 0;
+}
+
+.long-copy {
+    line-height:145%;
+    width: 60%; /*ocpa 60% e sobra 40%*/ 
+    margin-left: 20%; /*sendo 20% para cada lado*/
+}
+
+.box {
+    padding: 1%; /*dá um pequeno espaçamento entre o conteúdo e o container.*/
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+.images-showcase {
+    list-style: none; /*Retira marcadores*/
+    width: 100%; /*a lista agora ocupa toda largura da tela*/
+}
+
+.images-showcase li{
+    display: block; /*permite outros elementos ao lado*/
+    float: left; /*Faz com que os elementos sejam colocados lado a lado*/
+    width: 25%; /*cada item da lista terá 25% de largura em relação a tela... 100/4*/
+}
+
+.section-photos {
+    padding: 0;
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+.photo img {
+    opacity: 0.7; /*transparencia para aparecer a cor de fundo de .photo*/
+    width: 100%;
+    height: auto; /*para não desfigurar a imagem*/
+    transform: scale(1.15); /*imagem aumentada em 15%*/
+    transition: transform 0.5s; /*Transição quando houver alteração da propriedade transform*/
+}
+
+.photo img:hover {
+    opacity: 1;
+    transform: scale(1.03); /*escala da imagem com valor padrão*/
+    transition: transform 0.5s, opacity 0.5s; /*Transição quando houver alteração na propriedade transform ou opacity*/
+}
