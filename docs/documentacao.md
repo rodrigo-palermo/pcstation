@@ -52,7 +52,7 @@ Título: Em destaque e recomendados
   8. Forza Horizon - [fonte](https://www.ultimaficha.com.br/wp-content/uploads/2018/09/forza-horizon-4-screen-2.jpg)
   
   
-## Seção 3: Planos
+## Seção 3: Planos e Passos
 Título: Escolha o seu plano
 
 
@@ -62,10 +62,15 @@ Título: Escolha o seu plano
 | lorem         | ipsum        |        dolor |
 | $ 1 / dia     | $ 3 / dia    |   $ 10 / dia |
 
-* Todos os planos são cobrados mensalmente direto no cartão de crédito
+
+Instale o App com conteúdos exclusivos para assinantes. É super fácil.
+
+1. Selecione o plano adequado para você!
+2. Escolha qualquer jogo dentro da nossa plataforma!
+3. Acesse conteúdos exclusivos dos jogos!
    
 ## Seção 4: Eventos patrocinados
-Título: Eventos de TI e torneios patrocinados 
+Título: Descontos em eventos e torneios 
 
   - Campus Party Brasil
 
@@ -85,7 +90,7 @@ Título: Eventos de TI e torneios patrocinados
 
 - gamescom (ONLINE)
 
-    - 29 a 25 de agosto 2020
+    - 19 a 25 de agosto 2020
 
     - Colônia, ALE
 
@@ -93,10 +98,10 @@ Título: Eventos de TI e torneios patrocinados
 
   
 ## Seção 5: Depoimentos
-Título: E o nosso player, o que achou?
+Título: Diz aí, o que achou?
 
-Que cachorro o quê? PCStation é mais que animal! É sensacional!
-Parabéns à toda a equipe envolvida!
+Que cachorro o quê? PcStation é mais que animal! É sensacional!
+Parabéns a toda a equipe envolvida!
 (Márcia Canuto)
 
 Não tem igual! A concorrência tenta, mas não se compara. Uma infinidade
@@ -104,9 +109,9 @@ de títulos. E ainda tem versões remasterizadas dos clássicos. Os
 efeitos visuais são profissionais!
 (Joy Stevens)
 
-Até mue pai não que mais me deixar jogar! Porque ele não desgruda
-do PCStation. Podem ir por mim, é muito show! Valeu cada centavo investido.
-E são centavos mesmo, porque os planos são bem acessiveis também! 
+Até meu pai não que mais me deixar jogar! Porque ele não desgruda
+do PcStation. Podem ir por mim, é muito show! Valeu cada centavo investido.
+E são centavos mesmo, porque os planos são bem acessíveis também! 
 (Angelara Crofjolie)
 
 ## Última Seção: Rodapé (Footer)
