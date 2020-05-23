@@ -162,4 +162,7 @@ da classe ROW que definimos no style.css.*/
 @media only screen and (max-width: 480px){
 	/*Pequenos celulares: largura entre 0px e 480px*/
 	section {padding: 25px 0;} /*Define um novo valor de espaçamento top e bottom entre as seções para esse tamanho de tela*/
+
+	h1{ font-size: 150% }
+	h2{ font-size: 130% }
 }
