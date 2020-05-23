@@ -15,8 +15,22 @@
         sempre iniciar com escala 1.0 --> 
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
 
-         <!-- Importação do nossa folha de estilo de media queries -->
-         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <!-- Importação do nossa folha de estilo de media queries -->
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+
+        <!-- Retrocompatibilidade com navegadores antigos -->
+        <!-- Para os navegadores antigos entender/suportarem Media Query https://www.jsdelivr.com/package/npm/respond.js?path=cross-domain -->
+
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/cross-domain/respond.proxy.min.js"></script>
+        <!-- Suporte à HTML5 sectioning tags para navegadores existentes antes do HTML5 (Internet Explorer 6-9, Safari 4.x (iPhone 3.x), e Firefox 3.x.) https://www.jsdelivr.com/package/npm/html5shiv -->
+
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <!-- Emula pseudo-classes (ex. lastchild) do CSS3 no IE 6-8 https://www.jsdelivr.com/package/npm/selectivizr2 -->
+
+        <script src="https://cdn.jsdelivr.net/npm/selectivizr2@1.0.9/selectivizr2.min.js"></script>
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
 
         <title>PcStation</title>
         <meta charset="utf-8">
@@ -26,21 +40,24 @@
             <nav>
                 <div class="row">
                     <img src="resources/img/logo-t4-sq.png" alt="pcstation logo" class="logo">
-                    <ul class="main-nav">
-                        <li><a href="#">Loja</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Planos</a></li>
-                        <li><a href="#">Criar conta</a></li>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#secSobre">Sobre</a></li>
+                        <li><a href="#secGaleria">Galeria</a></li>
+                        <li><a href="#secPlanos">Planos</a></li>
+                        <li><a href="#secEventos">Eventos</a></li>
                     </ul>
+                    <a class="mobile-nav-icon js--mobile-nav-icon">
+                        <ion-icon name="menu-sharp"></ion-icon>
+                    </a>
                 </div>
-            <nav>
+            </nav>
             <div class="hero-text-box">
                 <h1>Todos os jogos de PC<br> num só lugar</h1>
                 <a class="btn btn-full" href="#">Entrar</a>
                 <a class="btn btn-ghost" href="#">Criar conta</a>
             </div>
         </header>
-        <section class="section-features">
+        <section id="secSobre" class="section-features js--section-features">
             <div class="row">
                 <h2 class="normal-case">PcStation - SOLUÇÃO COMPLETA PARA JOGOS DE PC</h2>
                 <p class="long-copy">
@@ -77,7 +94,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-photos">
+        <section id="secGaleria" class="section-photos">
             <ul class="images-showcase clearfix">
                 <li>
                     <figure class="photo">
@@ -123,7 +140,7 @@
                 </li>
             </ul>
         </section>
-        <section class="section-steps">
+        <section id="secPlanos" class="section-steps">
             <div class="row">
                 <h2>Escolha o seu plano</h2>
             </div>
@@ -186,7 +203,7 @@
             </div>
         </section>
         <!--Abrindo a seção eventos -->
-        <section class="section-events">
+        <section id="secEventos" class="section-events">
             <div class="row">
                 <h2>Descontos em eventos e torneios</h2>
             </div>
@@ -324,6 +341,21 @@
             </div>
         <!--Fechando a seção de rodapé-->
         </footer>
+
+        <script src="vendors/js/jquery.waypoints.min.js">
+            var waypoint = new Waypoint({
+                element: document.getElementById('waypoint'),
+                handler: function(direction) {
+                console.log('Scrolled to waypoint!')
+        }
+        });
+</script>
+    
+        <!-- Importa o meu arquivo js -->
+        <script src="resources/js/script.js"></script>
+
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
     </body>
  </html>
+ 

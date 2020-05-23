@@ -4,6 +4,11 @@
 da classe ROW que definimos no style.css.*/
 /*Lembrando que a esse valor deveria ter sido definido com base na tela da sua estação de trabalho (workstation)*/
 @media only screen and (max-width: 1200px){
+
+	.main-nav li {
+		display: inline-block; /*Mostra nav caso esteja escondida em outras queries*/
+	}
+
     /*Telas grandes de até 1200px de largura*/
     .hero-text-box {
 	    /*vamos sobrescrever o valor dessa propriedade*/
@@ -20,6 +25,11 @@ da classe ROW que definimos no style.css.*/
 }
 
 @media only screen and (max-width: 1023px){
+
+	.main-nav li {
+		display: inline-block; /*Mostra nav caso esteja escondida em outras queries*/
+	}
+
     /*Pequenos e grandes tablets: largura entre 768px e 1023px*/
     html{font-size: 18px;} /*Define o tamanho de fonte padrão para esse tamanho de tela*/
 	section {padding: 60px 0;} /*Define um novo valor de espaçamento top e bottom entre as seções para esse tamanho de tela*/
@@ -74,9 +84,6 @@ da classe ROW que definimos no style.css.*/
 		margin: 0 0 4% 0;
 	}
 
-    /*Escondendo a barra de navegação (temporariamente)*/
-	.main-nav {display: none;}
-
 	.steps-box:first-child {text-align: center;}
 
 	h1{ font-size: 180% }
@@ -105,7 +112,50 @@ da classe ROW que definimos no style.css.*/
 	.steps-box:first-child{text-align: center;}
 	.app-screen{width: 40%} /*Diminuindo o tamanho da imagem*/
 
-	
+	.main-nav {
+		display: none; /*Escondendo a barra de navegação (temporariamente)*/
+		margin-top: 25px;
+		margin-left: 35px;
+		float: left;
+	}
+
+	/*altera o display para menu mobile*/
+	.main-nav li {
+		display: block;
+
+	}
+
+	.main-nav li a {
+		border: 0;
+		padding: 10px 0;
+		font-size: 100%;
+	}
+
+	/*AULA 22/05/2020 - menu responsivo*/
+	.mobile-nav-icon {
+		display: inline-block;
+		font-size: 200%;
+		color: #82c91e;
+		font-size: large;
+	}
+
+	/*altera quando o nav pega a classe sticky na rolagem*/
+	.sticky .mobile-nav-icon {
+		margin-top: 10px;
+		color: #82c91e;
+		
+	}
+
+	.sticky .main-nav {
+		margin-top: 10px;
+	}
+
+	.sticky .main-nav li a:link,
+	.sticky .main-nav li a:visited {
+		border-bottom: 0px;
+		padding: 5px 0;
+	}
+
 
 }
 

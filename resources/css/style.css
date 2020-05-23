@@ -480,3 +480,47 @@ footer p {
     text-align: center;
     margin-top: 20px;
 }
+
+.sticky{
+    /*Posição FIXA*/
+    position: fixed;
+    /*Grudado no topo*/
+    top:0;
+    /*Grudado na esquerda*/
+    left:0;
+    /*Ocupando largura total do VH*/
+    width:100%;
+    /*Um pouquinho de transparência*/
+    background-color: rgba(255, 255,255, 0.95);
+    box-shadow: 0 2px 2px #efefef; /*Adicionar essa linha para efeito de sombra*/
+    z-index: 9999; /*Prioriedade máxima*/
+  }
+  
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+      padding: 16px 0;
+      color: #555;
+  }
+
+.sticky .main-nav {
+    margin-top: 18px; /*colocar um espaçamento acima da lista para baixar ela*/
+}
+
+.sticky .logo {
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/*Menu de navegação responsivo*/
+.mobile-nav-icon{
+    float: right;
+    /*margem superior*/
+    margin-top: 30px;
+    /*Define ponteiro do mouse*/
+    cursor: pointer; /*propriedade da mão*/
+    /*Desaparece com esse elemento, para mostrar somente em telas pequenas*/
+    display: none;
+
+}
